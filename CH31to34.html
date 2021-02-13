@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter Your Name");
+        var Dte = prompt("Enter Your date");
+        var mnth = prompt("Enter Your Month");
+        var yer = prompt("Enter Your Year");
+        var dtofBir = new Date(yer, mnth, Dte);
+        var currDat = new Date();
+        var dtofBirms = dtofBir.getTime();
+        var currDatms = currDat.getTime();
+        var age = currDatms - dtofBirms;
+        if (currDat.getHours >= "18" && currDat.getHours <= "23" ) {
+            console.log("Good Evening " + name);
+        }
+        else {
+            console.log("Good Morning " + name);
+        }
+        console.log("Your DOB is" + dtofBir);
+        console.log("Your are " + Math.floor(age / (1000*60*60*24*365))+ "yeras old");
+        console.log("Your age in days is " + Math.floor(age / (1000*60*60*24)));
+        console.log("Your age in hours is " + Math.floor(age / (1000*60*60)));
+        console.log("Happy BirthDay " + name);
+        
+    </script>
+</body>
+</html>

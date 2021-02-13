@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var courses = [];
+        var i = 1;
+        for (var i = 1; i <= 5; i++) {
+            var x = prompt("Enter the Five Courses","Math");
+            courses.push(x);
+        }
+        alert(courses);
+        for (var j = 1; j <= 5; j++) {
+            var x = prompt(courses[j],"");
+            courses.splice(j, 1, x);
+        }
+        alert(courses);
+        
+    </script>
+</body>
+</html>

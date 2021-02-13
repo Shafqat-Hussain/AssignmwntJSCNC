@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 1;
+        var final = 0;
+        while(i <= 5) {
+            var x = prompt("Enter SUB1 to SUB5 Obtained Marks",0);
+            final += +x;
+            i++
+        }
+        var totalMarks = +final
+       
+        switch (true) {
+            case (totalMarks >= 80 && totalMarks <=100): 
+            alert("A+");
+            break;
+            case totalMarks >= 75 && totalMarks <=89: 
+            alert("A");
+            break;
+
+            case totalMarks >= 61 && totalMarks <=74: 
+            alert("B");
+            break;
+
+            case totalMarks >= 45 && totalMarks <=60: 
+            alert("C");
+            break;
+
+            case totalMarks >= 30 && totalMarks <=44: 
+            alert("D");
+            break;
+
+            case totalMarks >= 0 && totalMarks <=29: 
+            alert("Fail");
+            break;
+        }
+    </script>
+    
+</body>
+</html>

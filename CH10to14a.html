@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = Number(prompt("Enter 1st Number", 2));
+        var y = Number(prompt("Enter 2nd Number", 2));
+        var op = prompt("Enter Operator", "+-/ or %");
+        if (op === "+") {
+            alert(x + y);
+        }
+        if (op === "") {
+            alert(x - y);
+        }
+        if (op === "/") {
+            alert(x / y);
+        }
+        if (op === "%") {
+            alert(x % y);
+        }
+        else {
+            alert("Enter Valid Sign");
+        }
+    </script>
+</body>
+</html>
